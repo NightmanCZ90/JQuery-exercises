@@ -10,6 +10,11 @@
   <button class="button-2">BUTTON 2</button>
   <button class="button-3">BUTTON 3</button>
   <input type="text" value="blue">
+  <br>
+  <h1>Counter</h1>
+  <h2><span>0</span></h2>
+  <button class="btn-increase">Increase</button>
+  <button class="btn-decrease">Decrease</button>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
@@ -23,7 +28,16 @@
 
     $(".button-3").one("click",() => {
       $("button").css("background-color", $("input").val());
-      
+    });
+    
+    let counter = 0;
+    $(".btn-increase").on("click", () => {
+      counter++;
+      $("span").text(counter);
+    });
+    $(".btn-decrease").on("click", () => {
+      counter--;
+      $("span").text(counter);
     });
 
   </script>
