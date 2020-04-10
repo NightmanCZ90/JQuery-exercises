@@ -9,6 +9,7 @@
   <button class="button-1">BUTTON 1</button>
   <button class="button-2">BUTTON 2</button>
   <button class="button-3">BUTTON 3</button>
+  <input type="text" value="blue">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
@@ -18,8 +19,11 @@
     $(".button-2").click(() => {
       $(".button-1").text("You changed this button's text")
     });
-    $(".button-3").click(() => {
-      $("button").css("background-color", "magenta")
+    // let color = $("input").val();
+
+    $(".button-3").one("click",() => {
+      $("button").css("background-color", $("input").val());
+      
     });
 
   </script>
