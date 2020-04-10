@@ -6,8 +6,18 @@
   <title>Document</title>
 </head>
 <body>
-  <button>BUTTON</button>
+  <button class="button-1">BUTTON 1</button>
+  <button class="button-2">BUTTON 2</button>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(".button-1").on("click", function(){
+      console.log("Yeah, you clicked me")
+    });
+    $(".button-2").click(() => {
+      $(".button-1").text("You changed this button's text")
+    });
+
+  </script>
 </body>
 </html>
