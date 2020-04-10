@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="todos.css" type="text/css">
   <title>Todos list</title>
 </head>
 <body>
 
+<div class="container">
+  <div class="box">
+    <h1>Todos</h1>
+    <div class="input-todo">
+      <input type="text" value="">
+      <button class="add">Add</button>
+    </div>
+    <ul class="todos-list">
+      <li><span class="todo-text">Buy milk</span><span><i class="fas fa-trash"></i><i class="fas fa-check-circle"></i></span></li>
+    </ul>
+  </div>
+</div>
 
-  <h1>My Simple Todo list</h1>
-  <h2>Todos</h2>
-  <ul class="todos-list">
-    <li>Buy milk</li>
-  </ul>
-  <input type="text" value="">
-  <button class="add">Add todo</button>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
